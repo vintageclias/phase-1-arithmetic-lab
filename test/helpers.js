@@ -4,7 +4,7 @@ global.expect = chai.expect
 const fs = require('fs')
 const jsdom = require('mocha-jsdom')
 const path = require('path')
-const babel = require('babel-core');
+const babel = require('@babel/register');
 
 const html = fs.readFileSync(path.resolve(__dirname, '..', 'index.html'), 'utf-8')
 
